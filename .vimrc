@@ -61,11 +61,3 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-
-"########  Plugins  #########"
-nmap <F4> :NERDTreeToggle<CR>
-let NERDChristmasTree = 1
-let NERDTreeShowBookmarks = 1
-
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
