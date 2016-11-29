@@ -14,6 +14,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'fatih/vim-go'
 Bundle 'joonty/vdebug.git'
 
 " All of your Plugins must be added before the following line
@@ -40,6 +41,10 @@ set tags=./.tags;/
 
 "set cindent"
 "set smartindent"
+set rnu
+let mapleader="\<space>"
+map <silent> <leader>z :FZF<cr>
+map <silent> <leader>f :FZF<cr>
 set tabstop=4
 set autoindent
 set copyindent
@@ -60,4 +65,3 @@ set pastetoggle=<F2>
 set nobackup
 set nowritebackup
 set noswapfile
-
